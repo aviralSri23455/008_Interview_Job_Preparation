@@ -1,0 +1,47 @@
+/* styles.css */
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .home {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h1 {
+    font-family: "Adobe Caslon", serif;
+    font-size: 55px;
+    font-style: italic;
+    color: #44593A;
+    animation: spin 5s linear forwards; /* Add animation property */
+  }
+  
+  /* Additional styling for line break */
+  h1 br {
+    display: none; /* Hide the line break on larger screens */
+  }
+  
+  @media (max-width: 768px) {
+    /* Show line break on smaller screens */
+    h1 br {
+      display: block;
+    }
+  }
+
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Add styles for buttons */
+  button {
+    margin-top: 10px;
+  }
+  
